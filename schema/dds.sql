@@ -5,7 +5,6 @@ USE CQ_BI_13_DDS
 GO
 
 CREATE TABLE fact_purchase(
-    purchase_id INT IDENTITY(1,1) PRIMARY KEY,
     product_id INT,
     branch_id INT,
     customer_type_id INT,

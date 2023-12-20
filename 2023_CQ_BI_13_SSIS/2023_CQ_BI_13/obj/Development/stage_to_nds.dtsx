@@ -7,12 +7,12 @@
   DTS:CreatorName="REVISION-PC\Thuan"
   DTS:DTSID="{D2729A4A-69F4-46CA-90A0-40FDD67505F6}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="1066"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="165"
-  DTS:VersionGUID="{B526EAD7-A74F-4D48-A9AF-D9514040CBF8}">
+  DTS:VersionBuild="166"
+  DTS:VersionGUID="{6F5E6D07-B423-4F59-990C-7092232B3E30}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1636,7 +1636,7 @@ where [refTable].[nk_branch_code] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Branch Source Id"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5397,6 +5397,62 @@ where [refTable].[nk_product_id] = ?</property>
                       <externalMetadataColumns />
                     </output>
                     <output
+                      refId="Package\ETL Invoice\ETL Invoice\Remove Invalid Rows.Outputs[invalid date value]"
+                      description="Output 7 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="invalid date value"
+                      synchronousInputId="Package\ETL Invoice\ETL Invoice\Remove Invalid Rows.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[YEAR](#{Package\ETL Invoice\ETL Invoice\Remove Dup NK.Outputs[Sort Output].Columns[date]}) != 2019 || [MONTH](#{Package\ETL Invoice\ETL Invoice\Remove Dup NK.Outputs[Sort Output].Columns[date]}) &gt; 3 || [MONTH](#{Package\ETL Invoice\ETL Invoice\Remove Dup NK.Outputs[Sort Output].Columns[date]}) &lt; 1</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">YEAR(date) != 2019 || MONTH(date) &gt; 3 || MONTH(date) &lt; 1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">6</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\ETL Invoice\ETL Invoice\Remove Invalid Rows.Outputs[invalid time value]"
+                      description="Output 8 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="invalid time value"
+                      synchronousInputId="Package\ETL Invoice\ETL Invoice\Remove Invalid Rows.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">[DATEPART]("hh",#{Package\ETL Invoice\ETL Invoice\Remove Dup NK.Outputs[Sort Output].Columns[time]}) &lt; 10 || [DATEPART]("hh",#{Package\ETL Invoice\ETL Invoice\Remove Dup NK.Outputs[Sort Output].Columns[time]}) &gt; 21</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("hh",time) &lt; 10 || DATEPART("hh",time) &gt; 21</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">7</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
                       refId="Package\ETL Invoice\ETL Invoice\Remove Invalid Rows.Outputs[Conditional Split Default Output]"
                       description="Default Output of the Conditional Split Transformation"
                       exclusionGroup="1"
@@ -7036,7 +7092,7 @@ where [refTable].[nk_payment_type_code] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Payment Type Source Id"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData

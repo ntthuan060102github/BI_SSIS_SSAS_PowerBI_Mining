@@ -19,7 +19,7 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>4C4MDOg/twOomLKPWcXYCQX6diw=10/12/2023 9:00:19 CH10/12/2023 2:31:37 CH</TimeStamp>
+        <TimeStamp>9BycOYr/iM9Cc8hfhFLzPWN2UIE=20/12/2023 3:56:48 CH10/12/2023 2:31:37 CH</TimeStamp>
         <ID>
           <String>CQ BI 13 DDS</String>
         </ID>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-12-11T11:44:41.97Z</LastDeployed>
+  <LastDeployed>2023-12-20T08:57:25.706667Z</LastDeployed>
 </DeploymentSnapshot>

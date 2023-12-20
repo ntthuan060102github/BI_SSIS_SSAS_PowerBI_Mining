@@ -7,12 +7,12 @@
   DTS:CreatorName="REVISION-PC\Thuan"
   DTS:DTSID="{CD67A70B-836A-4274-AA08-B740682EA3F4}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="1066"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{D4F8A549-F823-47D9-90F0-EADE9A8A5F1D}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{51CED319-9B68-4615-A3B6-F96F0973EA00}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -31,9 +31,6 @@
         <ExecutePackageTask>
           <UseProjectReference>True</UseProjectReference>
           <PackageName>nds_to_dds.dtsx</PackageName>
-          <PackagePassword
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASKgWMCuAeEOpdSAVvIeMugAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABGKkF9PLg+KRBFVUuNPTj7G3rrXdC5GiHZPwVF500GrgAAAAAOgAAAAAIAACAAAAAtKfdjlBDMTfHVaaGVxFKdT2xm6tQXoMZURoQ+dOhp+xAAAABvUNcxB133lUFO1emAZAqsQAAAAGUOQkTW/qxq5zjYLvkJgUsO+YOjcdHioO62eemtfO7JCzw29Nh2yPV/6LpWEQOXjPFyFJUJeGpBTYH9orb94zo</PackagePassword>
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -53,7 +50,7 @@
           <PackageName>source_system_to_stage.dtsx</PackageName>
           <PackagePassword
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASKgWMCuAeEOpdSAVvIeMugAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAEeSQ7k/oa67alVBsdabI5Pwl292wO8ydQFXXPVtqgiwAAAAAOgAAAAAIAACAAAAAOtzR4xnQ7HM9vMRGCXVdyuNFB7nBkOiRDCNbe2epmJBAAAADioDxFZwFnTSGWWWAhmTkoQAAAABIHm8paG3YZgbqpEqNxDTmIiMj0+W+0b7bfXHvLor+42DeBi8CfjJFiSsqmHSUsjNME6Jfp/p2ar/450nkJroU</PackagePassword>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASKgWMCuAeEOpdSAVvIeMugAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD1gXNqwqQHU0eA2d/xA/ZAw6o3uGQH5/GjwPuDHi4IYwAAAAAOgAAAAAIAACAAAABuLejSg+2BDswQrmojyylFX3T/DSEil8Cw6DkLoW97cRAAAACw0Ur0SDvak27ar9A0GUtRQAAAAMjeSy24MzM6vlx8y5DDrchpQdGyAs35PfndXCyhLtCvazhrNjSM377vW0KQhPdf4ZrmTSGgO51cgABJ59xgSEs</PackagePassword>
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -73,7 +70,7 @@
           <PackageName>stage_to_nds.dtsx</PackageName>
           <PackagePassword
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASKgWMCuAeEOpdSAVvIeMugAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACYx8HLT6BrS+9VRIOrqyU8Bqd0e6whkzq7Co2MmzgFwAAAAAAOgAAAAAIAACAAAABuyRT0xhBV8Oyq/HEKleIfCqKx1T4RByw7e3hoddIwTBAAAAAom0LWD1I2KX0jPSDbTkIjQAAAAKW6UeMt11PEbJGG3mQnmHFwz01l+MYOQfv66ZuDvLh3fY2HAYajeAgq4DBiW2YA3efogba5pgDCW2xhMXauTys</PackagePassword>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAASKgWMCuAeEOpdSAVvIeMugAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAN/hJno7Lm76O2P96u2phCFyRhaEgFy3TKdNthO5PMPAAAAAAOgAAAAAIAACAAAAA+WljUw5CKHgkynk9upel3zzrax8zYA/3gbk7xttKAaRAAAADW8Wmw02DgpMeRxDpo2YqVQAAAAAPlmxixwX9AvqyUZ9InrFqkCLFx2XY/CwNsOqU9HazcmjT+tXB0QCN12bgZm/WTQOZH9mjC9FYU6v/RPEM+Lxw</PackagePassword>
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
