@@ -7,12 +7,12 @@
   DTS:CreatorName="REVISION-PC\Thuan"
   DTS:DTSID="{1FB0DDC3-E3F7-4B6F-AE86-236BA5565148}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="1066"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="148"
-  DTS:VersionGUID="{094AA863-6306-46A0-8033-FAD534D3E7C7}">
+  DTS:VersionBuild="151"
+  DTS:VersionGUID="{8D81E171-25BA-4010-BDB5-89BB799A4868}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -69,6 +69,7 @@
       DTS:refId="Package\dev reset metadata"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="[dev] reset metadata"
+      DTS:Disabled="True"
       DTS:DTSID="{D87DA791-1BDB-43A8-957C-2AA09C18E2AD}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -846,7 +847,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET Branch"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -868,7 +869,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET Branch"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1792,7 +1793,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET Product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1814,7 +1815,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET Product"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2614,7 +2615,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET Product Line"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2636,7 +2637,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET Product Line"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4167,7 +4168,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET Sales"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4189,7 +4190,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET Sales"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -4329,7 +4330,7 @@
         <NodeLayout
           Size="167.2,41.6"
           Id="Package\dev reset metadata"
-          TopLeft="755.386863489386,299.12380744374" />
+          TopLeft="572.053529765784,19.5813240286392" />
         <NodeLayout
           Size="132.8,41.6"
           Id="Package\ETL Branch\ETL Bracnh"
@@ -4392,7 +4393,7 @@
           PanelSize="188,305.6"
           Size="188,348.8"
           Id="Package\ETL Branch"
-          TopLeft="334.999984974663,411.123807082139" />
+          TopLeft="151.666651251061,131.581323667038" />
         <NodeLayout
           Size="136,41.6"
           Id="Package\ETL Product\ETL Product"
@@ -4455,7 +4456,7 @@
           PanelSize="190.4,305.6"
           Size="190.4,348.8"
           Id="Package\ETL Product"
-          TopLeft="853.333286709257,409.840473340497" />
+          TopLeft="669.999952985655,130.297989925396" />
         <NodeLayout
           Size="158.4,41.6"
           Id="Package\ETL Product Line\ETL Product Line"
@@ -4518,7 +4519,7 @@
           PanelSize="212.8,305.6"
           Size="212.8,348.8"
           Id="Package\ETL Product Line"
-          TopLeft="578.287005440828,409.681214188044" />
+          TopLeft="394.953671717226,130.138730772943" />
         <NodeLayout
           Size="126.4,41.6"
           Id="Package\ETL Sales\ETL Sales"
@@ -4581,29 +4582,29 @@
           PanelSize="180.8,305.6"
           Size="180.8,348.8"
           Id="Package\ETL Sales"
-          TopLeft="1087.91660749871,408.323806684377" />
+          TopLeft="904.583273775108,128.781323269276" />
         <NodeLayout
           Size="118.4,41.6"
           Id="Package\Get CET"
-          TopLeft="782.261865299256,216.754111464064" />
+          TopLeft="425.714245492641,11.7704515130212" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Truncate Stage"
-          TopLeft="765.386866221265,146.554111952226" />
+          TopLeft="250.803531792519,14.2175107610347" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="840.824365760261,188.154111952226">
+          TopLeft="400.403531792519,33.7939811370279">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.5999995118382"
+              EndConnector="25.3107137001219,0"
               Start="0,0"
-              End="0,21.0999995118382">
+              End="17.8107137001219,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.0999995118382" />
+                    End="17.8107137001219,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4614,18 +4615,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="840.224364394321,258.354111464064">
+          TopLeft="544.114245492641,36.4758877708303">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40.769695979676"
+              EndConnector="27.9392842731435,0"
               Start="0,0"
-              End="0,33.269695979676">
+              End="20.4392842731435,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.269695979676" />
+                    End="20.4392842731435,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4636,7 +4637,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="823.066863489386,340.72380744374">
+          TopLeft="639.733529765784,61.181324028639">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4670,7 +4671,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="854.906863489386,340.72380744374">
+          TopLeft="671.573529765784,61.181324028639">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4704,7 +4705,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="791.226863489386,340.72380744374">
+          TopLeft="607.893529765784,61.181324028639">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4738,7 +4739,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="886.746863489386,340.72380744374">
+          TopLeft="703.413529765784,61.181324028639">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4781,50 +4782,48 @@
         <NodeLayout
           Size="156,41.6"
           Id="Package\ETL Branch\ETL Bracnh\Data Conversion"
-          TopLeft="401.778824201618,35.2666664214266" />
+          TopLeft="513.207395867392,39.0901958298398" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\ETL Branch\ETL Bracnh\OLE DB Destination"
-          TopLeft="189.903835777958,243.9166649705" />
+          TopLeft="111.332407039271,247.740194378913" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\ETL Branch\ETL Bracnh\OLE DB Source"
-          TopLeft="189.487169134057,35.2666664214266" />
+          TopLeft="110.915740395371,39.0901958298398" />
         <NodeLayout
           Size="184.8,41.6"
           Id="Package\ETL Branch\ETL Bracnh\Delete All Invalid Rows"
-          TopLeft="379.695492074865,137.966665707264" />
+          TopLeft="491.124063740639,141.790195115677" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\ETL Branch\ETL Bracnh\Check Timestamp"
-          TopLeft="188.445502524304,132.838887965144" />
+          TopLeft="109.874073785617,136.662417373557" />
         <EdgeLayout
           Id="Package\ETL Branch\ETL Bracnh.Paths[OLE DB Source Output]"
-          TopLeft="341.487169134057,56.0666664214267">
+          TopLeft="262.915740395371,59.8901958298398">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="60.2916550675618,0"
+              EndConnector="250.291655472021,0"
               Start="0,0"
-              End="52.7916550675618,0">
+              End="242.791655472021,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="52.7916550675618,0" />
+                    End="242.791655472021,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL Branch\ETL Bracnh.Paths[Data Conversion Output]"
-          TopLeft="475.937158138242,76.8666664214267">
+          TopLeft="587.365729804016,80.6901958298399">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -4841,38 +4840,36 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL Branch\ETL Bracnh.Paths[Conditional Split Default Output]"
-          TopLeft="379.695492074865,156.202776836204">
+          TopLeft="491.124063740639,160.026306244617">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-28.8499895505612,0"
+              EndConnector="-218.849989955021,0"
               Start="0,0"
-              End="-21.3499895505612,0">
+              End="-211.349989955021,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-21.3499895505612,0" />
+                    End="-211.349989955021,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-81.2889010252806,5,141.2278125,11.658203125"
+              BoundingBox="-176.288901227511,5,141.2278125,11.658203125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL Branch\ETL Bracnh.Paths[Check Timestamp]"
-          TopLeft="272.574669151131,174.438887965144">
+          TopLeft="194.003240412445,178.262417373557">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

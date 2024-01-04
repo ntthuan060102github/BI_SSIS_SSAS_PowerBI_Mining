@@ -7,12 +7,12 @@
   DTS:CreatorName="REVISION-PC\Thuan"
   DTS:DTSID="{EC3564DA-9B26-4DAA-8B6A-0C1CB3234B51}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5314.0"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
   DTS:LocaleID="1066"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="103"
-  DTS:VersionGUID="{65F32699-3B16-4B6E-B0F0-6B5487B85445}">
+  DTS:VersionBuild="107"
+  DTS:VersionGUID="{8E446EED-D496-43AE-9504-BA5E35311538}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -81,6 +81,7 @@
       DTS:refId="Package\dev reset LSET"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{13BD5190-9E8A-4C6C-918E-9CAC3A822302}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -1190,7 +1191,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1212,7 +1213,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2343,7 +2344,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2365,7 +2366,7 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3810,7 +3811,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3832,7 +3833,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5018,7 +5019,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -5040,7 +5041,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6171,7 +6172,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -6193,7 +6194,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7538,7 +7539,7 @@ where [refTable].[product_line_id] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7560,7 +7561,7 @@ where [refTable].[product_line_id] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8691,7 +8692,7 @@ where [refTable].[product_line_id] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8713,7 +8714,7 @@ where [refTable].[product_line_id] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -9629,7 +9630,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -9651,7 +9652,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -13319,44 +13320,44 @@ where [refTable].[year_number] = ?</property>
                   startId="Package\ETL fact_purchase\ETL fact_purchase\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]" />
                 <path
                   refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output7]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Customer Type.Inputs[Lookup Input]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Year.Inputs[Lookup Input]"
                   name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Branch.Outputs[Lookup Match Output]" />
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Product.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output6]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Aggregate.Inputs[Aggregate Input 1]"
-                  name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Datetime.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output5]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Month.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Year.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output4]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Payment Type.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Customer Type.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output2]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Product.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Payment Type.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output1]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Datetime.Inputs[Lookup Input]"
-                  name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Day.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output]"
                   endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Day.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Month.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output3]"
-                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Year.Inputs[Lookup Input]"
+                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output5]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Datetime.Inputs[Lookup Input]"
                   name="Lookup Match Output"
-                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Product.Outputs[Lookup Match Output]" />
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Day.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output4]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Product.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Payment Type.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output2]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Month.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Year.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output1]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Aggregate.Inputs[Aggregate Input 1]"
+                  name="Lookup Match Output"
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Datetime.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Customer Type.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Branch.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output3]"
+                  endId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Payment Type.Inputs[Lookup Input]"
+                  name="Lookup Match Output"
+                  startId="Package\ETL fact_purchase\ETL fact_purchase\Lookup Customer Type.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\ETL fact_purchase\ETL fact_purchase.Paths[New Output]"
                   endId="Package\ETL fact_purchase\ETL fact_purchase\Insert Destination.Inputs[OLE DB Destination Input]"
@@ -15299,7 +15300,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15321,7 +15322,7 @@ where [refTable].[year_number] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Update LSET"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -15494,7 +15495,7 @@ where [refTable].[year_number] = ?</property>
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\dev reset LSET"
-          TopLeft="582.291634851654,7.36666661543977" />
+          TopLeft="582.291634851654,39.4843136461109" />
         <NodeLayout
           Size="154.4,41.6"
           Id="Package\ETL dim_branch\ETL dim_branch"
@@ -15557,7 +15558,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="165.6,305.6"
           Size="165.6,348.8"
           Id="Package\ETL dim_branch"
-          TopLeft="1081.45827424506,174.221427533761" />
+          TopLeft="1081.45827424506,206.339074564432" />
         <NodeLayout
           Size="191.2,41.6"
           Id="Package\ETL dim_customer_type\ETL dim_customer_type"
@@ -15620,7 +15621,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="202.4,305.6"
           Size="202.4,348.8"
           Id="Package\ETL dim_customer_type"
-          TopLeft="826.944399262194,169.045501995385" />
+          TopLeft="826.944399262194,201.163149026056" />
         <NodeLayout
           Size="139.2,41.6"
           Id="Package\ETL dim_day\ETL dim_day"
@@ -15683,7 +15684,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="152,305.6"
           Size="152,348.8"
           Id="Package\ETL dim_day"
-          TopLeft="1075.27774476757,638.999999166307" />
+          TopLeft="1075.27774476757,671.117646196978" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\ETL dim_month\ETL dim_month"
@@ -15746,7 +15747,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="163.2,305.6"
           Size="163.2,348.8"
           Id="Package\ETL dim_month"
-          TopLeft="1291.47612952926,636.515870377761" />
+          TopLeft="1291.47612952926,668.633517408432" />
         <NodeLayout
           Size="188,41.6"
           Id="Package\ETL dim_payment_type\ETL dim_payment_type"
@@ -15809,7 +15810,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="199.2,305.6"
           Size="199.2,348.8"
           Id="Package\ETL dim_payment_type"
-          TopLeft="36.4583313413379,163.583332195795" />
+          TopLeft="36.4583313413379,195.700979226466" />
         <NodeLayout
           Size="157.6,41.6"
           Id="Package\ETL dim_product\ETL dim_product"
@@ -15872,7 +15873,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="168.8,305.6"
           Size="168.8,348.8"
           Id="Package\ETL dim_product"
-          TopLeft="572.920605967049,164.587566037671" />
+          TopLeft="572.920605967049,196.705213068342" />
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\ETL dim_product_line\ETL dim_product_line"
@@ -15935,7 +15936,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="190.4,305.6"
           Size="190.4,348.8"
           Id="Package\ETL dim_product_line"
-          TopLeft="291.148134589932,164.546295152062" />
+          TopLeft="291.148134589932,196.663942182733" />
         <NodeLayout
           Size="143.2,41.6"
           Id="Package\ETL dim_year\ETL dim_year"
@@ -15998,7 +15999,7 @@ where [refTable].[year_number] = ?</property>
           PanelSize="154.4,305.6"
           Size="154.4,348.8"
           Id="Package\ETL dim_year"
-          TopLeft="1294.04754834398,177.047617816452" />
+          TopLeft="1294.04754834398,209.165264847123" />
         <NodeLayout
           Size="165.6,41.6"
           Id="Package\ETL fact_purchase\ETL fact_purchase"
@@ -16061,11 +16062,11 @@ where [refTable].[year_number] = ?</property>
           PanelSize="176.8,305.6"
           Size="176.8,348.8"
           Id="Package\ETL fact_purchase"
-          TopLeft="559.672588468457,636.999995570382" />
+          TopLeft="559.672588468457,669.117642601053" />
         <NodeLayout
           Size="118.4,41.6"
           Id="Package\Get CET"
-          TopLeft="403.333311296173,0.433333330320007" />
+          TopLeft="403.333311296173,32.5509803609912" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Sequence Container\ETL dim_datetime"
@@ -16128,10 +16129,10 @@ where [refTable].[year_number] = ?</property>
           PanelSize="173.6,305.6"
           Size="173.6,348.8"
           Id="Package\Sequence Container"
-          TopLeft="835.444421527011,638.962962172797" />
+          TopLeft="835.444421527011,671.080609203468" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="521.733311296173,24.6999999728799">
+          TopLeft="521.733311296173,56.8176470035511">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16153,18 +16154,18 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="481.548134589932,338.966930594867">
+          TopLeft="481.548134589932,371.084577625538">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="91.372471377117,0"
+              EndConnector="91.3724713771169,0"
               Start="0,0"
-              End="83.872471377117,0">
+              End="83.8724713771169,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="83.872471377117,0" />
+                    End="83.8724713771169,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16175,7 +16176,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="704.291634851654,48.9666666154398">
+          TopLeft="704.291634851654,81.084313646111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16209,7 +16210,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="1372.16183893662,525.847617816452">
+          TopLeft="1372.16183893662,557.965264847123">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16231,7 +16232,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="1291.47612952926,812.157934772034">
+          TopLeft="1291.47612952926,844.275581802705">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16253,7 +16254,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="1075.27774476757,813.381480669552">
+          TopLeft="1075.27774476757,845.499127700223">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16275,7 +16276,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="835.444421527011,812.381478871589">
+          TopLeft="835.444421527011,844.49912590226">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16297,7 +16298,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="633.491634851654,48.9666666154398">
+          TopLeft="633.491634851654,81.084313646111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16331,7 +16332,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="609.891634851654,48.9666666154398">
+          TopLeft="609.891634851654,81.084313646111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16365,7 +16366,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="680.691634851654,48.9666666154398">
+          TopLeft="680.691634851654,81.084313646111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16399,7 +16400,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="657.091634851654,48.9666666154398">
+          TopLeft="657.091634851654,81.084313646111">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16433,7 +16434,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="136.058331341338,512.383332195795">
+          TopLeft="136.058331341338,544.500979226466">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16467,7 +16468,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="657.320605967049,513.387566037671">
+          TopLeft="657.320605967049,545.505213068342">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16501,7 +16502,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="928.144399262194,517.845501995385">
+          TopLeft="928.144399262194,549.963149026056">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -16535,7 +16536,7 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="1164.25827424506,523.021427533761">
+          TopLeft="1164.25827424506,555.139074564432">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -17176,9 +17177,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17224,9 +17223,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17248,9 +17245,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17451,9 +17446,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17475,9 +17468,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17547,9 +17538,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18258,9 +18247,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18509,9 +18496,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18557,9 +18542,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -18581,9 +18564,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -18717,49 +18698,49 @@ where [refTable].[year_number] = ?</property>
           TopLeft="432.566663616896,9.60000145286329" />
         <EdgeLayout
           Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output5]"
-          TopLeft="781.899993979931,231.400009812414">
+          TopLeft="835.299991163612,334.600011034309">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="50.1999971538779,0"
+              EndConnector="-44.7999971687794,0"
               Start="0,0"
-              End="42.6999971538779,0">
+              End="-37.2999971687794,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="42.6999971538779,0" />
+                    End="-37.2999971687794,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-26.8413881418111,5,96.3827734375,11.609375"
+              BoundingBox="-66.8413853031397,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output6]"
-          TopLeft="633.699993994832,333.200012300907">
+          TopLeft="903.09999114871,250.500010594725">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-46.3999971985816,0"
+              EndConnector="0,61.9999999701975"
               Start="0,0"
-              End="-38.8999971985816,0">
+              End="0,54.4999999701975">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-38.8999971985816,0" />
+                    End="0,54.4999999701975" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-67.6413853180408,5,96.3827734375,11.609375"
+              BoundingBox="-48.19138671875,21.4453124850987,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -19007,102 +18988,6 @@ where [refTable].[year_number] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output]"
-          TopLeft="903.09999114871,250.500010594725">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61.9999999701975"
-              Start="0,0"
-              End="0,54.4999999701975">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.4999999701975" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,21.4453124850987,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output1]"
-          TopLeft="835.299991163612,334.600011034309">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-44.7999971687794,0"
-              Start="0,0"
-              End="-37.2999971687794,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-37.2999971687794,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-66.8413853031397,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output2]"
-          TopLeft="395.300000074506,232.700006765127">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="46.1999968260527,0"
-              Start="0,0"
-              End="38.6999968260527,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="38.6999968260527,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-28.8413883057237,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output3]"
-          TopLeft="592.699996900559,233.300008270144">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="51.5999970793725,0"
-              Start="0,0"
-              End="44.0999970793725,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="44.0999970793725,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-26.1413881790638,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output7]"
           TopLeft="442.09999691546,121.800005044043">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -19126,7 +19011,55 @@ where [refTable].[year_number] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output4]"
+          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output1]"
+          TopLeft="633.699993994832,333.200012300907">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-46.3999971985816,0"
+              Start="0,0"
+              End="-38.8999971985816,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-38.8999971985816,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-67.6413853180408,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output2]"
+          TopLeft="781.899993979931,231.400009812414">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.1999971538779,0"
+              Start="0,0"
+              End="42.6999971538779,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="42.6999971538779,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.8413881418111,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output3]"
           TopLeft="300.10000013411,143.700005438923">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -19146,6 +19079,54 @@ where [refTable].[year_number] = ?</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-48.19138671875,24.1453127905726,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output7]"
+          TopLeft="592.699996900559,233.300008270144">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="51.5999970793725,0"
+              Start="0,0"
+              End="44.0999970793725,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="44.0999970793725,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-26.1413881790638,5,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL fact_purchase\ETL fact_purchase.Paths[Lookup Match Output4]"
+          TopLeft="395.300000074506,232.700006765127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="46.1999968260527,0"
+              Start="0,0"
+              End="38.6999968260527,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="38.6999968260527,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.8413883057237,5,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -19505,9 +19486,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19625,9 +19604,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19649,9 +19626,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19697,9 +19672,7 @@ where [refTable].[year_number] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

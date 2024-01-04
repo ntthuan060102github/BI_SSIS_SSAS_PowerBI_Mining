@@ -1636,7 +1636,7 @@ where [refTable].[nk_branch_code] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Branch Source Id"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2581,7 +2581,7 @@ where [refTable].[nk_customer_type_code] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Customer Type Source Id"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -7092,7 +7092,7 @@ where [refTable].[nk_payment_type_code] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Payment Type Source Id"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8551,7 +8551,7 @@ where [refTable].[nk_product_line_id] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Product Source ID"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -9693,7 +9693,7 @@ where [refTable].[nk_product_line_id] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Get Product Line Source Id"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
